@@ -19,8 +19,8 @@ match($status) {
 
     match($path) {
       with(/^\/$|^\/\?/) {
-        log("--> Importing pages/home.ts in mappings.ts")
-        @import pages/home.ts
+        log("--> Importing pages/listings.ts in mappings.ts")
+        @import pages/listings.ts
       }
       else() {
         log("--> No page match in mappings.ts")
