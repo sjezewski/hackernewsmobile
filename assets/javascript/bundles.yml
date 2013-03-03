@@ -1,0 +1,9 @@
+---
+- :output_file: main.js
+  :input_directory: main
+  :input_files:
+  - host_map.js
+  - http://d1topzp4nao5hp.cloudfront.net/uranium-upload/0.1.104/uranium-pretty.js
+  - http://d1topzp4nao5hp.cloudfront.net/plutonium-upload/0.1.73/gsub.js
+  - http://d1topzp4nao5hp.cloudfront.net/plutonium-upload/0.1.73/passthrough_ajax.js
+

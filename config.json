@@ -1,0 +1,5 @@
+{
+	"host_map": [
+		"$.news.ycombinator.com => news.ycombinator.com"
+	]
+}
