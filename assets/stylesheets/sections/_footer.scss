@@ -1,3 +1,18 @@
-footer._footer {
+footer {
+  border-top: 2px solid #F60;
+
+  background-color: #F6F6EF;
+
+  a {
+    border-top: 1px solid #878787; //#989898;
+    padding: 10px 5px;
+    display: block;
+
+    &:first-child {
+      border: 0px;
+    }
+
+  }
+
 
 }
