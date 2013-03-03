@@ -54,10 +54,25 @@ $('./body') {
            ur_toggler(".//div[contains(@class,'button')]", ".//div[contains(@class, 'links')]")
             
         }
-      }
+      }                 
 
     }
   }
+
+  # Setup Search
+
+  $(".//form") {
+    add_class("search")
+    insert_top("div", class: "button")
+    $(".//input") {
+      wrap("div", class: "field")
+    }
+
+    ur_toggler(".//div[@class='button']", ".//div[@class='field']")
+    remove("./text()")
+    move_to("//div[contains(@class,'header')]")
+  }
+
 
 
 }

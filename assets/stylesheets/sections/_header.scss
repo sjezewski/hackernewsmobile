@@ -8,6 +8,41 @@
     display: inline-block;
   }
 
+  .search {
+    float: right;
+  
+
+    > * {
+      display: inline-block;
+    }
+
+     [data-ur-toggler-component='content'] {
+       position: absolute;
+       width: 100%;
+       left: 0px;
+       top: 30px;
+       background-color: #828282;
+       padding: 5px 0px;
+
+       &[data-ur-state='disabled'] {
+         display: none;
+       }
+
+       input {
+         position: relative;
+         width: 90%;
+         left: 5%;
+       }
+
+     }
+
+    .button {
+      background: no-repeat image-url('search.png') 5px 6px;
+      width: 24px;
+      height: 24px;
+    }
+  }
+
   .logo {
     vertical-align: top;
 
