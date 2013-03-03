@@ -7,7 +7,6 @@ $('./body') {
 
       move_to("//body", "top")
       remove("./@*")
-      add_class("header")
 
       # Convert from a table
 
@@ -18,6 +17,8 @@ $('./body') {
       $(".//td") {
         name("span")
       }
+
+      name("header")
 
       # Setup Logo
 
@@ -70,7 +71,7 @@ $('./body') {
 
     ur_toggler(".//div[@class='button']", ".//div[@class='field']")
     remove("./text()")
-    move_to("//div[contains(@class,'header')]")
+    move_to("//header")
   }
 
 

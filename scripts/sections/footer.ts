@@ -1,5 +1,5 @@
-# $("./body") {
-#   insert_bottom("footer", class: "_footer") {
-#     Move stuff here
-#   }
-# }
+$("./body") {
+   insert_bottom("footer")
+
+
+}
