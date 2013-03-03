@@ -25,6 +25,7 @@ $('./body') {
         move_here("(..//span//img)[1]/ancestor::span[1]") {
           remove("./@*")
           add_class("icon")
+          name("div")
         }
         move_here("..//a[@href='news']")
       }

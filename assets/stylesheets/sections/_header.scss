@@ -1,13 +1,50 @@
 .header {
+
+  background-color: #F60;
+  position: relative;
   
-  .button {
+  > * {
+    display: inline-block;
+//    margin: 5px 10px 0px;
+  }
+
+  .logo {
+    vertical-align: top;
+
+    > a {
+      color: #000;
+      font-family: verdana;
+      font-weight: bold;
+      font-size: 10pt;
+    }
     
+    > * {
+      display:inline-block;
+      margin: 5px 10px 0px;
+    }
   }
 
+  .navigation {
+    position: absolute;
+    top: 5px;
+    right: 5px;
 
-  [data-ur-state='disabled'] {
-    display: none;
-  }
+
+    .button {
+       background-image: image-url('nav.jpeg');
+       height: 20px;
+       width: 20px;
+    }
+
+    .links {
+      position: absolute;
+      right: 0px;
+
+      &[data-ur-state='disabled'] {
+        display: none;
+      }
+    }
   
+  }
    
 }
