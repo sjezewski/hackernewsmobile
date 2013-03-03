@@ -2,7 +2,7 @@
 
   background-color: #F60;
   position: relative;
-  height: 29px;
+  height: 30px;
   
   > * {
     display: inline-block;
@@ -10,6 +10,10 @@
 
   .logo {
     vertical-align: top;
+
+    .icon img {
+      border: 1px solid white;
+    }
 
     > a {
       color: #000;
@@ -26,12 +30,17 @@
 
   .navigation {
     float: right;
-    padding: 5px;
+    padding: 2px 5px;
 
     .button {
-       background-image: image-url('nav.jpeg');
-       height: 20px;
-       width: 20px;
+       background: no-repeat image-url('menu.png') 2px 3px;
+       height: 25px;
+       width: 25px;
+
+       &[data-ur-state='enabled'] {
+         background-color: #828282;
+       }
+
     }
 
     .links {

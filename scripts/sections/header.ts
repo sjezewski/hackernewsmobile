@@ -30,6 +30,8 @@ $('./body') {
         move_here("..//a[@href='news']")
       }
 
+      # Setup Navigation
+
       $(".//span[contains(@class, 'pagetop')]/ancestor::div[1]") {
         add_class("links")
 
