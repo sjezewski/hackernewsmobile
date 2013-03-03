@@ -33,6 +33,19 @@ $('./body') {
       $(".//span[contains(@class, 'pagetop')]/ancestor::div[1]") {
         add_class("links")
 
+        $(".//a") {
+          add_class("link")
+          $("..") {
+            remove("./text()")
+          }
+          $("../b|../img") {
+            remove()
+          }
+        }
+
+        $("(.//span[contains(@class, 'pagetop')])[2]//a") {
+          move_to("ancestor::div[contains(@class, 'links')]//a[contains(@class, 'link')][last()]")
+        }
 
         wrap("div", class: "navigation") {
            insert_top("div", class:"button")

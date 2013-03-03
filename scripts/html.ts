@@ -4,7 +4,7 @@ $("/html") {
   rewrite_links()
   absolutize_srcs()
 
-  
+  remove(".//@style")  
 
   add_assets()
 
