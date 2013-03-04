@@ -1,7 +1,26 @@
 
-#listings{
+body.listings{
+
+  .more {
+    background-color: #F60;
+    
+    display: block;
+    width: 100%;
+
+    a {
+      color: white;
+      display: block;
+      padding: 10px;
+      font-family: verdana;
+      font-weight: bold;      
+
+      background: no-repeat image-url('left-arrow.png') 100% 1px;
+      background-origin: content-box;
+
+    }
 
 
+  }
 
 
 }
