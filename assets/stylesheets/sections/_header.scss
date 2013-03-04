@@ -44,22 +44,23 @@ header {
   }
 
   .logo {
-    vertical-align: top;
 
     .icon img {
       border: 1px solid white;
     }
 
     > a {
-      color: #000;
+      color: #FFF;
       font-family: verdana;
       font-weight: bold;
       font-size: 10pt;
+      
     }
     
     > * {
       display:inline-block;
       margin: 5px 10px 0px;
+      vertical-align: middle;
     }
   }
 
