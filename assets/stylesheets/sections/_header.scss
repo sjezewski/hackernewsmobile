@@ -8,9 +8,19 @@ header {
     display: inline-block;
   }
 
+  [data-ur-toggler-component='button'] {
+    width: 25px;
+    height: 25px;
+
+    &[data-ur-state='enabled'] {
+      background-color: #828282 !important;
+    }
+
+  }
+
   .search {
     float: right;
-  
+    padding: 2px 5px;
 
     > * {
       display: inline-block;
@@ -37,9 +47,7 @@ header {
      }
 
     .button {
-      background: no-repeat image-url('search.png') 5px 6px;
-      width: 24px;
-      height: 24px;
+      background: no-repeat image-url('search.png') 4px 3px;
     }
   }
 
@@ -70,12 +78,6 @@ header {
 
     .button {
        background: no-repeat image-url('menu.png') 2px 3px;
-       height: 25px;
-       width: 25px;
-
-       &[data-ur-state='enabled'] {
-         background-color: #828282;
-       }
 
     }
 
