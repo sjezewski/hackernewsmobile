@@ -24,12 +24,29 @@ body.listings{
 
   .content {
   
-    .external_link {
-      display: inline-block;
+    .article {
+      border-bottom: 1px solid #9A9A9A;
+      padding: 5px 10px;
+      text-align: left;
+
+      > :first-child {
+        margin-bottom: 10px;
+      }
+
+      .external_link {
+        display: inline-block;
+      }
+
+      &:last-child {
+        border: 0px;
+      }
+
     }
   
   }
 
-
+  .old_table {
+    display: none;
+  }
 
 }

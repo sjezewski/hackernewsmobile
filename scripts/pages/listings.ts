@@ -36,21 +36,28 @@ $("./body") {
       name("div")
 
       $count = $("./*")
-#      log("empty:" + $empty)
 
-     $("preceding-sibling::div[not(@class) and not(node())][1]") {
-       add_class("article")
-     }
+      $("preceding-sibling::div[not(@class) and not(node())][1]") {
+        add_class("article")
+      }
 
       match($count, /[^0]/) {
         move_to("preceding-sibling::div[contains(@class,'article')]")
       }
-
-      
+   
     }
     name("div")
+
+    # Clean up empty rows
+
+    remove(".//div[contains(@class, 'article') and not(node())]")
+
+    remove(".//div[contains(@class, 'article') and position()=last()]")
     
   }
-  
+
+  $("//table//div") {
+    add_class("old_table")
+  }
   
 }
