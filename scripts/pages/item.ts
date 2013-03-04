@@ -3,4 +3,5 @@ $("./body") {
 
   remove("//table/@*")
   remove("//td/@bgcolor")
+  remove("//@width")
 }
