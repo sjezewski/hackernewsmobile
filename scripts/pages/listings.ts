@@ -18,6 +18,39 @@ $("./body") {
   
   # Setup links
 
+  $("(//a[contains(@href, 'vote')])[1]/ancestor::table[1]") {
+    move_to("//center[contains(@class, 'content')]")
+    add_class("listings")
+
+    insert_top("tr") # Account for one more empty wrapper for the first article
+
+    $("//td") {
+      name("span")
+
+      $(".//a[contains(@href, 'vote')]/ancestor::center[1]") { 
+        add_class("external_link")
+      }
+
+    }
+    $("//tr") {
+      name("div")
+
+      $count = $("./*")
+#      log("empty:" + $empty)
+
+     $("preceding-sibling::div[not(@class) and not(node())][1]") {
+       add_class("article")
+     }
+
+      match($count, /[^0]/) {
+        move_to("preceding-sibling::div[contains(@class,'article')]")
+      }
+
+      
+    }
+    name("div")
+    
+  }
   
   
 }
