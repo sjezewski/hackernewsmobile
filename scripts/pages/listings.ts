@@ -1,5 +1,3 @@
-log("WAWAWEEWA")
-
 $("./body") {
   add_class("listings")
 

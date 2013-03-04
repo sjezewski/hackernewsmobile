@@ -62,7 +62,7 @@ $('./body') {
 
   # Setup Search
 
-  $(".//form") {
+  $(".//form[contains(@action, 'search')]") {
     add_class("search")
     insert_top("div", class: "button")
     $(".//input") {
