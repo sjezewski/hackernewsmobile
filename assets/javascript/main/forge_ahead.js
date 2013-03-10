@@ -1,3 +1,4 @@
+(function() {
 
 var pages = [
   "news",
@@ -30,7 +31,6 @@ function addQuery(url, query) {
 
 function getLink(url, callback) {
   var url = addQuery(url, "json=true");
-
 
   function parseResponse(response) {
     console.log(this);
@@ -70,5 +70,11 @@ function navigateToDepth(depth) {
   function forgeAhead(url) {
     window.location = url;
   }
+
   getLinkAtDepth(depth, forgeAhead);
 }
+
+  window.navigateToDepth = navigateToDepth;
+
+})();
+
