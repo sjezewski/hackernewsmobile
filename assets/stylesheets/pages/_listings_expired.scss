@@ -20,6 +20,10 @@ body.listings.expired {
       padding: 15px;
       margin-bottom: 20px;
 
+      &.disabled {
+        background-color: #828282;
+      }
+
       a {
         display: inline-block;
         font-size: 18pt;

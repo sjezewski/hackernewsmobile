@@ -1,5 +1,7 @@
 // (function() {
 
+var articles_per_page = 30;
+
 var pages = [
   "news",
   "news2"
@@ -74,7 +76,35 @@ function navigateToDepth(depth) {
   getLinkAtDepth(depth, forgeAhead);
 }
 
-  window.navigateToDepth = navigateToDepth;
+window.navigateToDepth = navigateToDepth;
+
+window.addEventListener(
+  'load',
+  function(e) {
+
+    x$("body.listings").each(
+      function() {
+
+        forgeAheadDepth = localStorage.maxIndex;
+
+        if (forgeAheadDepth !== undefined) {
+          x$(".option.forge_ahead").removeClass("disabled");
+
+          x$(".option.forge_ahead").on(
+            'click',
+            function(e){
+              navigateToDepth(forgeAheadDepth);
+            }
+          );
+        }
+
+      }
+    );
+
+
+  }
+);
+
 
 //})();
 
