@@ -93,7 +93,7 @@ window.addEventListener(
           x$(".option.forge_ahead").on(
             'click',
             function(e){
-              navigateToDepth(forgeAheadDepth);
+              navigateToDepth(forgeAheadDepth/articles_per_page);
             }
           );
         }
