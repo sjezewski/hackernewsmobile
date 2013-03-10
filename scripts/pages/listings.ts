@@ -7,7 +7,7 @@ $("./body") {
 
   # Setup More button
 
-  $("//*[contains(text(), 'More')]") {
+  $("//*[text()='More']") {
     wrap("div") {    
       add_class("more")
       move_to("//center[contains(@class, 'content')]", "after")
@@ -58,4 +58,9 @@ $("./body") {
     add_class("old_table")
   }
   
+}
+
+match($path, /json=true/) {
+  $more_url = fetch("//div[contains(@class,'more')]//@href")
+  $json = "{\"next\" : \"" + $more_url + "\"}"
 }

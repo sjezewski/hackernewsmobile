@@ -20,3 +20,8 @@ match($content_type) {
     log(concat("Passing through ", $content_type, " unmodified"))
   }
 }
+
+match($path, /json=true/) {
+  log("JSON:" + $json)
+  set($json)
+}
