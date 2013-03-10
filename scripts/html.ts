@@ -6,6 +6,15 @@ $("/html") {
 
   remove(".//@style")  
 
+  # Some pages are headless ... correct this
+
+  $head = $("//head")
+  match($head, /0/) {
+    $("./body") {
+      insert_before("head")
+    }
+  }
+
   add_assets()
   insert_mobile_meta_tags()
 

@@ -1,7 +1,9 @@
 $("./body") {
   add_class("listings")
 
-  $expired = $("//p[contains(text(), 'Unknown or expired link')]")
+  $expired = $("//p[contains(text(), 'Unknown or expired link')]") {
+    add_class("expired_message")
+  }
 
   match($expired) {
 
