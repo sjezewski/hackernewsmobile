@@ -57,9 +57,31 @@ $("//body") {
     add_class("old_table")
   }
 
+  $("//body/*[position()=last()]") {
+    insert_after("script", src: asset("javascript/breadcrumbs.js"))
+  }
+
 }  
+
+#log("COUNT:" + fetch("//div[contains(@class,'article') and position()=last()]//span[contains(@class,'title')][1]/text()"))
+#  $("//div[contains(@class,'article') and position()=last()]//span[contains(@class,'title')]") {
+#    attribute("id", "blah")
+#  }
+
 
 match($path, /json=true/) {
   $more_url = fetch("//div[contains(@class,'more')]//@href")
-  $json = "{\"next\" : \"" + $more_url + "\"}"
+  $json = "{\"next\" : \"" + $more_url + "\""
+  
+  log("ASDFLAKSDJGF")
+  # $last_item_index = fetch("(//div[contains(@class,'article') and position()=last()]//span[@title])[1]")
+  $last_item_index = fetch("//div[contains(@class,'article') and position()=last()]//span[contains(@class,'title')][1]/text()")
+  log("index:" + $last_item_index)
+  $last_item_index {
+    replace(/(\w*?)\./, "$1")
+  }
+  
+  $json = $json + ", \"last_item_index\" : \"" + $last_item_index + "\""
+
+  $json = $json + "}"
 }

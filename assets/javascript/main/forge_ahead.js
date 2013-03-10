@@ -1,4 +1,4 @@
-(function() {
+// (function() {
 
 var pages = [
   "news",
@@ -76,5 +76,5 @@ function navigateToDepth(depth) {
 
   window.navigateToDepth = navigateToDepth;
 
-})();
+//})();
 
