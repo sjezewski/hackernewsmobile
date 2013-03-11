@@ -52,6 +52,7 @@ function getNextLink(url, remainingDepth, successCallback) {
   }
 
   function progress(data) {
+    p.bump();
     getNextLink(data['next'], remainingDepth-1, successCallback);
   }
 
@@ -69,9 +70,21 @@ function getLinkAtDepth(depth, callback) {
 
 
 function navigateToDepth(depth) {
+  window.p = new progressBar(
+    ".progress", 
+    {
+      'ticks':depth,
+      'number' : true
+    }
+  );
+
   function forgeAhead(url) {
-    window.location = url;
+    //window.location = url;
+    console.log("land on:" + url);
   }
+
+  p.bump();
+  p.bump();
 
   getLinkAtDepth(depth, forgeAhead);
 }
@@ -93,6 +106,7 @@ window.addEventListener(
           x$(".option.forge_ahead").on(
             'click',
             function(e){
+	      x$(".progress").removeClass("disabled");
               navigateToDepth(forgeAheadDepth/articles_per_page);
             }
           );

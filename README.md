@@ -1,3 +1,8 @@
+## TODO
+
+- Add an 'unblock' form on mobile (since I had to use it, and people generally use their phones to do it)
+- The path is: http://news.ycombinator.com/unban?ip=<ip address> ... it should respond w 'unbanned'
+
 ## Basics
 
 Welcome to your Moovweb project! Moovweb is a great way to build a compelling front-end for a website. The files in this project describe the changes we want to make to the front end of a site. There's places in this project to add new images (assets/images/), styles (assets/stylesheets/) and even manipulate HTML (scripts/).

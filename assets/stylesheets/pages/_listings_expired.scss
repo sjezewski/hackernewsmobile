@@ -33,5 +33,32 @@ body.listings.expired {
 
     }
   }
+
+  .progress {
+
+    &.disabled {
+      display: none;
+    }
+  
+    margin: 20px;
+
+    background-color: #828282;
+    height: 30px;
+    position: relative;
+
+    .bar {
+      background-color: white;
+      height: 100%;
+      position: absolute;
+    }
+
+    .number {
+      position: absolute;
+      top: 24%;
+      float: center;
+      color: black;
+    }   
+  
+  }
   
 }
