@@ -61,4 +61,44 @@ body.listings.expired {
   
   }
   
+  
+  *[data-ur-set='toggler'] {
+    position: relative;
+    top: -20px;    
+
+    > * {
+      background-color: white;
+      height: 30px;
+    }
+
+    *[data-ur-toggler-component='button'] {
+      width: 30px;
+      float: right;
+
+      &[data-ur-state='enabled'] {
+        background-color: #828282;
+	color: white;
+      }
+
+      font-size: 12pt;
+      background-color: white;
+      padding-top: 11px;
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+
+    *[data-ur-toggler-component='content'] {
+      padding: 10px;
+      height: 60px;
+
+      &[data-ur-state='disabled'] {
+        visibility: hidden;
+      }
+    }
+
+
+
+  }
+  
+  
 }
