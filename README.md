@@ -1,7 +1,10 @@
 ## TODO
 
 - Add an 'unblock' form on mobile (since I had to use it, and people generally use their phones to do it)
-- The path is: http://news.ycombinator.com/unban?ip=<ip address> ... it should respond w 'unbanned'
+  - The path is: http://news.ycombinator.com/unban?ip=<ip address> ... it should respond w 'unbanned'
+- Also add a 'settings' dialog to enable auto-forge-ahead following
+- Codify the header / footer and be able to insert them on pages that lack them
+
 
 ## Basics
 

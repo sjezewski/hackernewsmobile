@@ -1,4 +1,4 @@
-// (function() {
+(function() {
 
 var articles_per_page = 30;
 
@@ -79,8 +79,7 @@ function navigateToDepth(depth) {
   );
 
   function forgeAhead(url) {
-    //window.location = url;
-    console.log("land on:" + url);
+    window.location = url;
   }
 
   p.bump();
@@ -120,5 +119,5 @@ window.addEventListener(
 );
 
 
-//})();
+})();
 
