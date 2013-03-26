@@ -1,5 +1,3 @@
-(function() {
-
 var articles_per_page = 30;
 
 var pages = [
@@ -119,5 +117,4 @@ window.addEventListener(
 );
 
 
-})();
 
