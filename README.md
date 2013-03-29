@@ -1,3 +1,12 @@
+## Summary
+
+Decided to scratch my own itch (and save my eyesight).
+
+Some highlights:
+
+- search / nav bar work
+- added the 'forge-ahead' feature
+
 ## TODO
 
 - Add an 'unblock' form on mobile (since I had to use it, and people generally use their phones to do it)
@@ -5,7 +14,9 @@
 - Also add a 'settings' dialog to enable auto-forge-ahead following
 - Codify the header / footer and be able to insert them on pages that lack them
 - Unbind the forge ahead listener after the click to make sure its not fired multiple times
-
+- Fix up the article pages
+  - The easiest win was to flatten the comments ... I'm sure we can figure out something better
+- Design love (icons / header / styles / buttonize links)
 
 ## Basics
 
