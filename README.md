@@ -5,7 +5,7 @@ Decided to scratch my own itch (and save my eyesight).
 Some highlights:
 
 - search / nav bar work
-- added the 'forge-ahead' feature
+- added the 'forge-ahead' feature: ![forge ahead](https://raw.github.com/sjezewski/hackernewsmobile/master/assets/images/forge-ahead.png)
 
 ## TODO
 
