@@ -47,7 +47,7 @@ progressBar.prototype = {
       this.value = 100;
     }
     else {
-      this.value = newValue;
+      this.value = parseInt(newValue);
     }
 
     return this.value;
