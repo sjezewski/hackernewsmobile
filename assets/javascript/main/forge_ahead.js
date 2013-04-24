@@ -95,7 +95,7 @@ window.addEventListener(
     x$("body.listings").each(
       function() {
 
-        forgeAheadDepth = localStorage.maxIndex;
+        var forgeAheadDepth = localStorage.maxIndex;
 
         if (forgeAheadDepth !== undefined) {
           x$(".option.forge_ahead").removeClass("disabled");
@@ -104,7 +104,7 @@ window.addEventListener(
             'click',
             function(e){
 	      x$(".progress").removeClass("disabled");
-              navigateToDepth(forgeAheadDepth/articles_per_page);
+              navigateToDepth(forgeAheadDepth/articles_per_page+1);
             }
           );
         }
